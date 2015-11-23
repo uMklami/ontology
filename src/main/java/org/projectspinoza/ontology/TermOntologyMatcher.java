@@ -110,6 +110,18 @@ public class TermOntologyMatcher {
 				"Body").replaceAll("[\r\n]+", ""), ontology.get("Tag")));
 		matches.add(relation);
 	}
+	
+	public void makeHierarchy(){
+		for (int i = 0; i < matches.size(); i++) {
+			MatchedTerm relation = matches.get(i);
+			for (int j=0; j< (matches.size()); j++){
+				MatchedTerm relation2 = matches.get(j);
+				
+			}
+			
+		}
+		
+	}
 
 	public void printTestMatched(int matchedCount) {
 		String results = "results.txt";

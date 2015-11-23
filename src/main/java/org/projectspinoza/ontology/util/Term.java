@@ -1,8 +1,9 @@
 package org.projectspinoza.ontology.util;
 
+import java.util.List;
+
 
 public class Term {
-//	private static Logger log = LogManager.getRootLogger();
 	
 	private String title;
 	private String term;
@@ -10,7 +11,11 @@ public class Term {
 	private String description;
 	private int frequency = 1;
 	private int overAllFrequency = 1;
+	private List<Term> childs;
 	
+	public void setChilds(List<Term> childs) {
+		this.childs = childs;
+	}
 	public Term(){}
 	public Term(String term){
 		this.term = term;
